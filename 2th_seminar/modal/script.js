@@ -1,11 +1,14 @@
-const btnClick = ()=>{
+const modalBtn = document.getElementById('modal-btn');
+const closeBtn = document.getElementById('close-btn');
+
+const btnClick = () => {
     document.querySelector('.modal-container').style.display = 'block';
-    document.querySelector('.black_bg').style.display = 'block';
+    document.querySelector('.black-body').style.display = 'block';
 }
-const closeBtnClick = () =>{
+const closeBtnClick = () => {
     document.querySelector('.modal-container').style.display = 'none';
-    document.querySelector('.black_bg').style.display = 'none';
+    document.querySelector('.black-body').style.display = 'none';
 }
 
-document.getElementById('modal-btn').addEventListener('click',btnClick);
-document.getElementById('close-btn').addEventListener('click',closeBtnClick);
+modalBtn.addEventListener('click',btnClick);
+closeBtn.addEventListener('click',closeBtnClick);
