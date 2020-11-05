@@ -1,6 +1,6 @@
 import {createAsyncAction,createReducer} from 'typesafe-actions';
 import {AxiosError} from 'axios';
-import { getUser, IUserData } from '../../lib/api/user';
+import { getUser, IUserData } from '../../lib/api/github/user';
 // saga modules
 import {call,put,takeEvery} from 'redux-saga/effects';
 

@@ -1,13 +1,13 @@
 import React from "react";
-import SearchInput from '../src/components/searchInput/SearchInput';
-import SearchResult from "./components/searchResult/SearchResult";
-import {getUser} from "./lib/api/user";
+import SearchInputContainer from './containers/SearchInputContainer';
+import SearchResult from "./containers/SearchResult";
 
 function App() {
 
   return( 
   <>
-    <SearchInput></SearchInput>
+    <SearchInputContainer></SearchInputContainer>
+    <SearchResult></SearchResult>
   </>);
 }
 
