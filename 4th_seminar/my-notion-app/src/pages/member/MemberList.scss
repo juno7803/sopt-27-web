@@ -1,0 +1,9 @@
+.member-list-content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    margin: 0 -8px;
+    
+    // repeat(n번 반복, 크기)
+    // auto-fill : 자동으로 채워줌
+    // minmax(200px,1fr); 줄어들거나 늘었을때 최소, 최댓값을 지정 / fr은 
+}
