@@ -1,12 +1,12 @@
 import React from 'react';
 import "./MainHeader.scss";
 import Button from '../button/Button';
-//import MenuIcon from "../../assets/icons/"
+import menuIcon from "../../assets/icons/mdi_dehaze.svg"
 
 function MainHeader({match, history, location}:any){
     return(
         <header className="main-header">
-            <img className="main-header__icon" alt="icon" src={""}/>
+            <img className="main-header__icon" alt="icon" src={menuIcon}/>
             <nav className="main-header__nav">
                 <Button text="[ON SOPT] Web Part" onClickFunc={()=>history.push('/')}/>
                 <span> / </span>
