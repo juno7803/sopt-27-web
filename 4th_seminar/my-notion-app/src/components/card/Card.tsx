@@ -1,10 +1,10 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 import {DeleteOutlined} from "@ant-design/icons";
 import './Card.scss';
+import {Imembers} from "../../pages/member/MemberList";
 
 interface ICard{
-    memberData: any;
+    memberData: Imembers;
 }
 
 function Card({memberData}:ICard){

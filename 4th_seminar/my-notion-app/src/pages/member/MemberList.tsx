@@ -5,7 +5,7 @@ import axios from "axios";
 import Loading from "../../components/loading/Loading";
 import Card from "../../components/card/Card";
 
-interface Imembers{
+export interface Imembers{
   id: number;
   instagram: string;
   introduction: string;
@@ -19,6 +19,7 @@ function MemberList() {
     members: [],
     status: "idle",
   }); // 서버에서 데이터가 안 넘어오는 등의 상황에 대한 처리를 위해서 작성
+  
   useEffect(() => {
     (async () => {
       setMemberState({ members: [], status: "pending" });
